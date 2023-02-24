@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Currency converter app</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+    <body class="grid place-content-center">
+        <div class="wrapper bg-sky-200 p-8 rounded">
+            <header class="text-3xl font-bold p-2">CURRENCY CONVERTER</header>
+            <form action="#">
+                <div class="amount">
+                    <p class="text-xl">Enter amount (From USD to BDT)</p>
+                    <input id="input-value" class="pl-2 rounded" type="text" value="">
+                </div>
+                <div class="">
+                  <div class="from">
+                    <!-- <p>From USD</p> -->
+                    <div class="select-box">
+                        <!-- <select>
+                            <option id="from-usd" value="USD">USD</option>
+                            <option id="from-bdt" value="BDT">BDT</option>
+                        </select> -->
+                  </div>  
+                  <!-- <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <select>
+                            <option id="to-usd" value="USD">USD</option>
+                            <option id="to-bdt" value="BDT">BDT</option>
+                        </select>
+                  </div> 
+                </div> -->
+                <div class="exchange-rate py-2 font-bold">***1 USD = 100 BDT***</div>
+                <button id="calculate-rate" class="bg-blue-500 p-2 rounded flex flex-col font-medium text-white mx-auto">Get Exchange Rate</button>
+                <!-- <div class="py-2 grid place-content-center text-indigo-600" >
+                    <input class="text-center rounded text-indigo-600" type="text" name="" id="final-output" placeholder="Result">
+                </div> -->
+            </form>        
+        </div> 
+        <script src="js/event.js"></script>
+    </body>
+
+</html>    
